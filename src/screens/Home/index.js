@@ -22,6 +22,33 @@ const Home = ({navigation}) => {
           })
         }
       />
+
+      <Button
+        title="IFU - TEC 2531_003_US - CarboClear Cervical Plate System - 2023-01-15"
+        onPress={() =>
+          navigation.navigate('PDFViewer', {
+            uri: 'https://carbofix.app.box.com/s/24n7on69zvau35r1qsudhvcfvjhy90sg/file/1144342694850',
+          })
+        }
+      />
+
+      <Button
+        title="Radiation Oncology CarboClear X Pedicle Presentation - Short 27.7.2023-Video Test"
+        onPress={() =>
+          navigation.navigate('PDFViewer', {
+            uri: 'https://carbofix.app.box.com/s/igc22s3iu0pbvrj5mjufmsyj7tbmhrba',
+          })
+        }
+      />
+
+      <Button
+        title="Oncology CarboClear X Pedicle Screws Sales Call Hub 1.8.2023-Video Included"
+        onPress={() =>
+          navigation.navigate('PDFViewer', {
+            uri: 'https://carbofix.app.box.com/s/0mikwab40psmgs6uksxtn5szucc99nke',
+          })
+        }
+      />
     </View>
   );
 };
