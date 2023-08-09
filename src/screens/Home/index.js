@@ -1,11 +1,27 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Button} from 'react-native';
 import styles from './styles';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Button
+        title="file-sample_150kB"
+        onPress={() =>
+          navigation.navigate('PDFViewer', {
+            uri: 'https://file-examples.com/storage/fe1dbaea7664d369bb6e226/2017/10/file-sample_150kB.pdf',
+          })
+        }
+      />
+
+      <Button
+        title="file-example_PDF_1MB"
+        onPress={() =>
+          navigation.navigate('PDFViewer', {
+            uri: 'https://file-examples.com/storage/fe1dbaea7664d369bb6e226/2017/10/file-example_PDF_1MB.pdf',
+          })
+        }
+      />
     </View>
   );
 };

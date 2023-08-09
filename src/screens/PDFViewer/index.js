@@ -1,11 +1,28 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text, View} from 'react-native';
+import Pdf from 'react-native-pdf';
 import styles from './styles';
 
-const PDFViewer = () => {
+const PDFViewer = ({route}) => {
   return (
     <View style={styles.container}>
-      <Text>PDFViewer</Text>
+      <Pdf
+        source={{
+          uri: route.params.uri,
+          cache: true,
+        }}
+        onLoadComplete={(numberOfPages, filePath) => {
+          console.log(`Number of pages: ${numberOfPages}`);
+        }}
+        onError={error => {
+          console.log(error);
+        }}
+        style={styles.pdf}
+        renderActivityIndicator={progress => (
+          <Text>{(progress * 100).toFixed()}%</Text>
+        )}
+        trustAllCerts={false}
+      />
     </View>
   );
 };
