@@ -1758,9 +1758,9 @@
   integrity sha512-285lfdqSXaqKuBbbtP9qL2tDrfxdOFtIMvkKadtleRQkdOxx+uzGvFr82KHmc/sSiMtfXGp7JnFYWVh4sFl7Yw==
 
 "@react-native/virtualized-lists@^0.72.6":
-  version "0.72.6"
-  resolved "https://registry.yarnpkg.com/@react-native/virtualized-lists/-/virtualized-lists-0.72.6.tgz#375f88a1371927d803afad8d8a0ede3261464030"
-  integrity sha512-JhT6ydu35LvbSKdwnhWDuGHMOwM0WAh9oza/X8vXHA8ELHRyQ/4p8eKz/bTQcbQziJaaleUURToGhFuCtgiMoA==
+  version "0.72.8"
+  resolved "https://registry.yarnpkg.com/@react-native/virtualized-lists/-/virtualized-lists-0.72.8.tgz#a2c6a91ea0f1d40eb5a122fb063daedb92ed1dc3"
+  integrity sha512-J3Q4Bkuo99k7mu+jPS9gSUSgq+lLRSI/+ahXNwV92XgJ/8UgOTxu2LPwhJnBk/sQKxq7E8WkZBnBiozukQMqrw==
   dependencies:
     invariant "^2.2.4"
     nullthrows "^1.1.1"
@@ -5437,6 +5437,10 @@ react-native-pdf@^6.7.1:
   dependencies:
     crypto-js "^3.2.0"
     deprecated-react-native-prop-types "^2.3.0"
+
+"react-native-pspdfkit@github:PSPDFKit/react-native":
+  version "2.6.1"
+  resolved "https://codeload.github.com/PSPDFKit/react-native/tar.gz/ee492dba1abccdab8483ab77361285d7200de6f3"
 
 react-native-safe-area-context@^4.7.1:
   version "4.7.1"
